@@ -1,0 +1,10 @@
+/* Layout khusus halaman portfolio saja (tanpa sidebar) */
+main.portfolio-only { max-width: 1200px; margin-inline: auto; }
+main.portfolio-only article { width: auto; min-height: auto; }
+
+@media (min-width: 580px) {
+  main.portfolio-only .project-list { grid-template-columns: 1fr 1fr; }
+}
+@media (min-width: 1024px) {
+  main.portfolio-only .project-list { grid-template-columns: repeat(3, 1fr); }
+}
